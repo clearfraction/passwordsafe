@@ -65,6 +65,9 @@ DESTDIR=%{buildroot} ninja -C builddir install
 
 %find_lang passwordsafe
 
+%post
+glib-compile-schemas /usr/share/glib-2.0/schemas
+
 
 %files -f passwordsafe.lang
 %license LICENSE
