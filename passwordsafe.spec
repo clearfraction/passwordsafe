@@ -2,7 +2,7 @@
 %define 	appname PasswordSafe
 %define 	appid org.gnome.PasswordSafe
 
-Name:           gnome-passwordsafe
+Name:           passwordsafe
 Version:        3.32.0
 Release:        1%{?dist}
 Summary:        A password manager for GNOME
@@ -69,7 +69,7 @@ DESTDIR=%{buildroot} ninja -C builddir install
 %files -f passwordsafe.lang
 %license LICENSE
 %doc README.md
-%{_bindir}/%{name}
+%{_bindir}/gnome-%{name}
 /usr/lib/python3*/*/passwordsafe/
 %{_datadir}/applications/%{appid}.desktop
 %{_datadir}/passwordsafe/
