@@ -3,7 +3,7 @@
 %define 	appid org.gnome.PasswordSafe
 
 Name:           passwordsafe
-Version:        3.99.1
+Version:        3.99.2
 Release:        1%{?dist}
 Summary:        A password manager for GNOME
 License:        GPLv3+
