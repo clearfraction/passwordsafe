@@ -20,7 +20,7 @@ BuildRequires:  python3-dev
 BuildRequires:  python-dateutil-python3 
 BuildRequires:  pycparser-python3
 BuildRequires:  lxml-python3
-BuildRequires:  argon2_cffi-python3
+BuildRequires:  argon2-cffi-python3
 BuildRequires:  python-future-python3
 BuildRequires:  pycryptodome-python3
 BuildRequires:  pykeepass-python3
@@ -31,7 +31,7 @@ Requires:       construct-python3
 Requires:       pycryptodome-python3
 Requires:       lxml-python3
 Requires:       libpwquality-python3
-Requires:       argon2_cffi-python3
+Requires:       argon2-cffi-python3
 BuildArch:      noarch
 
 %description
