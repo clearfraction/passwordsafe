@@ -3,7 +3,7 @@
 %define 	appid org.gnome.PasswordSafe
 
 Name:           passwordsafe
-Version:        3.99.2
+Version:        4.0
 Release:        1%{?dist}
 Summary:        A password manager for GNOME
 License:        GPLv3+
@@ -14,7 +14,7 @@ BuildRequires:  pkg-config
 BuildRequires:  desktop-file-utils appstream-glib
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(gtk+-3.0)
-BuildRequires:  pkgconfig(libhandy-0.0)
+BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:  pkgconfig(pwquality)
 BuildRequires:  python3-dev
 BuildRequires:  python-dateutil-python3 
@@ -23,6 +23,7 @@ BuildRequires:  lxml-python3
 BuildRequires:  argon2-cffi-python3
 BuildRequires:  python-future-python3
 BuildRequires:  pycryptodome-python3
+BuildRequires:  pycryptodomex
 BuildRequires:  pykeepass-python3
 BuildRequires:  construct-python3
 
@@ -43,11 +44,7 @@ management of password databases.
 %setup -q -n %{appname}-%{version}
 
 %build
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1574700391
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
