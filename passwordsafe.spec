@@ -22,14 +22,13 @@ BuildRequires:  pycparser-python3
 BuildRequires:  lxml-python3
 BuildRequires:  argon2-cffi-python3
 BuildRequires:  python-future-python3
-BuildRequires:  pycryptodome-python3
-BuildRequires:  pycryptodomex
+BuildRequires:  pycryptodomex-python3
 BuildRequires:  pykeepass-python3
 BuildRequires:  construct-python3
 
 Requires:       pykeepass-python3
 Requires:       construct-python3
-Requires:       pycryptodome-python3
+Requires:       pycryptodomex-python3
 Requires:       lxml-python3
 Requires:       libpwquality-python3
 Requires:       argon2-cffi-python3
