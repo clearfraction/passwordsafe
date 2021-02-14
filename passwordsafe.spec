@@ -3,11 +3,11 @@
 %define 	appid org.gnome.PasswordSafe
 
 Name:           passwordsafe
-Version:        4.0
+Version:        5.0
 Release:        1%{?dist}
 Summary:        A password manager for GNOME
 License:        GPLv3+
-URL:            https://gitlab.gnome.org/World/%{appname}
+URL:            https://gitlab.gnome.org/World/PasswordSafe
 Source:         %{url}/-/archive/%{version}/%{appname}-%{version}.tar.bz2
 BuildRequires:  meson
 BuildRequires:  pkg-config
@@ -76,6 +76,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 %{_datadir}/icons/hicolor/symbolic/apps/%{appid}-symbolic.svg
 %{_datadir}/icons/hicolor/scalable/apps/%{appid}.svg
 %{_datadir}/metainfo/%{appid}.appdata.xml
+%{_datadir}/mime/application/*.xml
 
 
 %changelog
