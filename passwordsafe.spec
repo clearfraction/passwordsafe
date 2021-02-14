@@ -57,8 +57,7 @@ ninja -v -C builddir
 
 %install
 DESTDIR=%{buildroot} ninja -C builddir install
-
-
+mv %{buildroot}/usr/share/mime/application %{buildroot}/usr/share/mime/packages
 %find_lang passwordsafe
 
 %post
@@ -76,8 +75,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 %{_datadir}/icons/hicolor/symbolic/apps/%{appid}-symbolic.svg
 %{_datadir}/icons/hicolor/scalable/apps/%{appid}.svg
 %{_datadir}/metainfo/%{appid}.appdata.xml
-%{_datadir}/mime/application/*.xml
-
+%{_datadir}/mime-packages/org.gnome.PasswordSafe.xml
 
 %changelog
 # based on https://build.opensuse.org/package/view_file/openSUSE:Factory/gnome-passwordsafe/
